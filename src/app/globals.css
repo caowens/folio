@@ -13,7 +13,7 @@ text-accent {
   line-height: 96px;
 }
 
-.blurred-eclipse {
+.blurred-eclipse-1 { /* Center Eclipse */
   position: absolute;
   top: 50%; /* Adjust as needed */
   left: 50%; /* Adjust as needed */
@@ -22,6 +22,32 @@ text-accent {
   height: 300px; /* Adjust size for eclipse shape */
   border-radius: 50%; /* Makes it an ellipse */
   background-color: rgba(100, 100, 255, 0.5); /* Example color with transparency */
-  filter: blur(125px); /* Adjust blur intensity */
+  filter: blur(100px); /* Adjust blur intensity */
+  /* z-index: -1; /* Place it behind other content */
+}
+
+.blurred-eclipse-2 { /* Right Eclipse */
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 100%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the eclipse */
+  width: 400px; /* Adjust size */
+  height: 300px; /* Adjust size for eclipse shape */
+  border-radius: 50%; /* Makes it an ellipse */
+  background-color: rgba(26, 229, 215, 0.5); /* Example color with transparency */
+  filter: blur(180px); /* Adjust blur intensity */
+  /* z-index: -1; /* Place it behind other content */
+}
+
+.blurred-eclipse-3 { /* Left Eclipse */
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 0%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the eclipse */
+  width: 500px; /* Adjust size */
+  height: 300px; /* Adjust size for eclipse shape */
+  border-radius: 50%; /* Makes it an ellipse */
+  background-color: rgba(113, 47, 226, 0.5); /* Example color with transparency */
+  filter: blur(180px); /* Adjust blur intensity */
   /* z-index: -1; /* Place it behind other content */
 }
