@@ -1,6 +1,7 @@
 export default function Home() {
   return (
-    <>
+    <div className="relative">
+      <div className="blurred-eclipse"></div>
       <div
         className="py-48 px-4 md:px-0 z-50 animate-fade-up animate-once animate-duration-1000 animate-delay-300"
         style={{ transform: "translate(0px, 0px)", transition: "transform 0.5s ease-out" }}
@@ -33,6 +34,6 @@ export default function Home() {
           </div>
         </main>
       </div>
-    </>
+    </div>
   );
 }
