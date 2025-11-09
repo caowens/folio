@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import { Raleway } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const raleway = Raleway();
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -26,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased ${raleway.className}`}
       >
         <div className="min-h-screen flex flex-col items-center bg-black relative overflow-hidden">
           <Navbar />
