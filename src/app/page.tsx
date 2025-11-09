@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <div className={`relative ${raleway.className}`}>
+      <div className={`relative`}>
         <div className="blurred-eclipse-1"></div>
         <div className="blurred-eclipse-2"></div>
         <div className="blurred-eclipse-3"></div>
