@@ -23,7 +23,7 @@ const navItems = [
 ];
 
 const NavItem = ({ name, href }: { name: string; href: string }) => (
-    <li className="relative z-10 px-2 md:px-4 text-center py-2 rounded-full cursor-pointer transition-colors duration-300 text-neutral-300">
+    <li className="relative z-10 px-2 md:px-4 text-center py-2 rounded-full cursor-pointer transition-colors duration-300 text-neutral-300 hover:text-white">
         <Link href={href} className="relative z-20">{name}</Link>
     </li>
 );
