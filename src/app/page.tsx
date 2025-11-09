@@ -19,13 +19,13 @@ export default function Home() {
         >
           <main className="max-w-l">
             <div className="pt-14 text-center flex items-center justify-center">
-              <h1 className="text-gray-50 text-xl text-left leading-5">
+              <h1 className="text-gray-50 text-xl text-center leading-5">
                 <span className="font-extrabold">
                   Alex Owens
                 </span>
                 <br />
                 <span className="text-xs font-semibold">
-                  <span>Based in Redmond</span>
+                  <span>Based in Redmond, WA</span>
                 </span>
               </h1>
             </div>
