@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Navbar() {
     return (
-        <header className="fixed left-1/2 top-10 z-[999] -translate-x-1/2 w-full md:w-auto">
+        <header className="fixed left-1/2 top-10 z-[999] -translate-x-1/2 w-full font-semibold md:w-auto">
             <nav className="relative animate-jump-in animate-once animate-duration-1000">
                 <ul className="relative grid grid-cols-4 items-center justify-center py-2 border border-white/10 backdrop-blur-md rounded-full shadow-lg transition-all duration-200 ease-in-out mx-2 md:mx-0">
                     {navItems.map((item) => (
