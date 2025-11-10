@@ -55,6 +55,16 @@ text-accent {
   /* z-index: -1; /* Place it behind other content */
 }
 
+.blurred-eclipse-blue {
+  transform: translate(-50%, -50%); /* Center the eclipse */
+  width: 500px; /* Adjust size */
+  height: 300px; /* Adjust size for eclipse shape */
+  border-radius: 50%; /* Makes it an ellipse */
+  background-color: rgba(18, 198, 234, 0.5); /* Example color with transparency */
+  filter: blur(180px); /* Adjust blur intensity */
+  /* z-index: -1; /* Place it behind other content */
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

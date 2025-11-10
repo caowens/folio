@@ -45,6 +45,7 @@ function ExperienceList({
 export default function Experience() {
     return (
         <SectionWrapper idName="Experience">
+            <div className="blurred-eclipse-blue absolute left-1"></div>
             <Tabs defaultValue="work" className="w-full rounded-lg">
                 <TabsList className="grid w-full grid-cols-2">
                     <TabsTrigger value="work">Work</TabsTrigger>
