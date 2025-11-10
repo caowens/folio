@@ -54,28 +54,28 @@ export const works: Experience[] = [
     place: "Microsoft",
     dates: "Aug 2024 - Aug 2025",
     logo_url: "/works/microsoft.png",
-    description: "Implemented automated UI and end-to-end tests to improve deployment confidence and service reliability, while optimizing CI/CD pipelines to cut deployment time by 77%. Led cross-team projects for telemetry and reporting, managed on-call operations, and mentored new hires to increase team efficiency."
+    description: "Improved deployment reliability, cut CI/CD time by 77%, and led telemetry projects."
   },
   {
     title: "Software Engineer Intern",
     place: "Microsoft",
     dates: "May 2023 - Aug 2023",
     logo_url: "/works/microsoft.png",
-    description: "Enhanced a C# virtual file system and automated data collection with PowerShell scripts, providing insights that prevented costly adoption risks and informed infrastructure decisions."
+    description: "Enhanced a C# virtual file system and automated data collection."
   },
   {
     title: "Explore Intern (SWE + PM)",
     place: "Microsoft",
     dates: "May 2022 - Aug 2022",
     logo_url: "/works/microsoft.png",
-    description: "Developed an anti-phishing automation pipeline in C# and Azure, improving Microsoft Edge security, while coordinating with engineers and PMs to strengthen project alignment and deliverables."
+    description: "Built anti-phishing automation in C# and Azure, improving Edge security."
   },
   {
     title: "STEP Intern (SWE)",
     place: "Google",
     dates: "May 2021 - Aug 2021",
     logo_url: "/works/new-google.png",
-    description: "Built and refactored Java testing infrastructure to improve Nest thermostat reliability and test maintainability, contributing to stronger team alignment and higher system quality."
+    description: "Developed and refactored Java test infrastructure for Nest thermostat."
   },
 ];
 

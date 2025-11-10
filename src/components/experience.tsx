@@ -16,7 +16,7 @@ function ExperienceList({
     experiences: Experience[]
 }) {
     return (
-        <ul className="ml-10 list-none border-l border-neutral-300">
+        <ul className="ml-6 -my-6 list-none border-l border-neutral-300">
             {experiences.map((experience) => (
                 <li key={experience.title} className="relative ml-10 py-4 pr-2">
                     <div className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
@@ -50,7 +50,7 @@ export default function Experience() {
                     <TabsTrigger value="work">Work</TabsTrigger>
                     <TabsTrigger value="education">Education</TabsTrigger>
                 </TabsList>
-                <TabsContents className="mx-1 mb-1 -mt-2 rounded-sm h-full border-[1px] border-white">
+                <TabsContents className="mx-1 mb-1 rounded-sm h-full border-[1px] border-white">
                     <TabsContent value="work" className="space-y-6 p-6">
                         <ExperienceList experiences={works} />
                     </TabsContent>
