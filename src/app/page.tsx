@@ -1,6 +1,7 @@
 import { Raleway } from "next/font/google";
 import { contacts } from "@/constants";
 import ContactButton from "@/components/contact-button";
+import StyledBreak from "@/components/styled-break";
 
 const raleway = Raleway();
 
@@ -60,6 +61,7 @@ export default function Home() {
           </main>
         </div>
       </div>
+      <StyledBreak />
     </>
   );
 }
