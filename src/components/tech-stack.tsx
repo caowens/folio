@@ -19,6 +19,7 @@ const TechStackChip: React.FC<TechChip> = ({
 export default function TechStack() {
     return (
         <SectionWrapper idName="TechStack">
+            <div className="blurred-eclipse-green absolute -right-3/12"></div>
             <div className="flex flex-wrap gap-2 items-center">
                 {TECH_STACK.map((stack) => (
                     <TechStackChip 
