@@ -1,6 +1,5 @@
 import { contacts } from "@/constants";
 import ContactButton from "@/components/contact-button";
-import StyledBreak from "@/components/styled-break";
 
 export default function Hero() {
     return (
