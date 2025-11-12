@@ -13,13 +13,15 @@ const ProjectCard = ({
             href={`/projects/${project.id}`}
             className="border border-neutral-300 rounded-lg flex flex-col justify-between hover:-translate-y-2 transition ease-in-out duration-300"
         >
-            <Image
-                alt={project.name}
-                src={project.cover_photo}
-                width={100}
-                height={192}
-                className="w-full h-48 object-cover rounded-t-md"
-            />
+            <div className="w-full h-48 relative">
+                <Image
+                    alt={project.name}
+                    src={project.cover_photo}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="rounded-t-md"
+                />
+            </div>
             <div className="p-2 flex-grow">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-lg text-gray-50">
