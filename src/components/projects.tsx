@@ -56,6 +56,8 @@ export default function Projects() {
 
     return (
         <SectionWrapper idName="Projects" viewMoreLink={{href: "/projects"}}>
+            <div className="blurred-eclipse-purple absolute left-1"></div>
+            <div className="blurred-eclipse-purple absolute -right-3/12"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {PROJECTS.slice(0, numberOfProjectsToShow).map((project) => (
                     <ProjectCard
