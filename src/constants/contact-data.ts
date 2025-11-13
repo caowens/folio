@@ -10,7 +10,7 @@ interface Contact {
   hoverColor: string;
 }
 
-export const contacts: Contact[] = [
+export const CONTACTS: Contact[] = [
   {
     method: "LinkedIn",
     detail: "linkedin.com/in/iamalexowens",

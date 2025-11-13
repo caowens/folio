@@ -1,4 +1,4 @@
-import { contacts } from "@/constants";
+import { CONTACTS } from "@/constants";
 import ContactButton from "@/components/contact-button";
 
 export default function Hero() {
@@ -35,7 +35,7 @@ export default function Hero() {
                 </div>
                 <div className="pt-2 text-center">
                     <div className="flex justify-center gap-4">
-                    {contacts.map((contact) => {
+                    {CONTACTS.map((contact) => {
                         const IconComponent = contact.icon;
 
                         return (
