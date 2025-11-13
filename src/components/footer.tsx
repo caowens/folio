@@ -3,7 +3,9 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="py-10 mx-auto container max-w-3xl text-neutral-300 px-4 md:px-0 md:py-20 z-50 animate-fade-up animate-once animate-duration-1000 animate-delay-[600ms]">
+        <footer className="py-10 relative mx-auto container max-w-3xl text-neutral-300 px-4 md:px-0 md:py-20 z-50 animate-fade-up animate-once animate-duration-1000 animate-delay-[600ms]">
+            <div className="blurred-eclipse-green absolute -bottom-28 -left-96 opacity-50"></div>
+            <div className="blurred-eclipse-blue absolute -bottom-96 -right-full"></div>
             <div className="border rounded-lg p-6 flex flex-col md:flex-row justify-between">
                 <div className="logo flex flex-col justify-end mb-6 md:mb-0">
                     <p className="text-5xl">
