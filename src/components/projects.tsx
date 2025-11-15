@@ -67,7 +67,7 @@ export default function FeaturedProjects({ isFullList = false }: FeaturedProject
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projectsToDisplay.map((project) => (
                     <ProjectCard
-                        key={project.id}
+                        key={project.slug}
                         project={project}
                     />
                 ))}
