@@ -55,6 +55,27 @@ export default async function ProjectPage({
                     ))}
                 </div>
             </SectionWrapper>
+
+            <SectionWrapper idName="Gallery">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {project.gallery ? project.gallery.map((pic) => (
+                        <Image
+                            key={pic.alt}
+                            src={pic.src}
+                            alt={pic.alt}
+                            height={300}
+                            width={500}
+                            className="rounded-lg shadow-lg cursor-pointer"
+                        />
+                    )) : <Image
+                            src={project.cover_photo}
+                            alt={project.name}
+                            height={300}
+                            width={500}
+                            className="rounded-lg shadow-lg cursor-pointer"
+                        />}
+                </div>
+            </SectionWrapper>
         </StandardPageLayout>
     );
 };

@@ -1,3 +1,8 @@
+export interface GalleryImage {
+    src: string;
+    alt: string;
+}
+
 export interface Project {
     slug: string;
     name: string;
@@ -7,6 +12,7 @@ export interface Project {
     cover_photo: string;
     href: string;
     key_features: string[];
+    gallery?: GalleryImage[];
 }
 
 export const PROJECTS: Project[] = [
@@ -25,6 +31,20 @@ export const PROJECTS: Project[] = [
             "• Built with Node.js, Express.js, and MongoDB.",
             "• Rate-limiting and bot detection via Arcjet and interactive Swagger documentation."
         ],
+        gallery: [
+            {
+                src: "/projects/lifted-api/lifted.jpg",
+                alt: "Lifted API Overview"
+            },
+            {
+                src: "/projects/lifted-api/main-swagger.png",
+                alt: "Lifted API Swagger Documentation Page"
+            },
+            {
+                src: "/projects/lifted-api/quotes-and-users-routes.png",
+                alt: "Lifted API Quotes and Users Routes"
+            },
+        ]
     },
     {
         slug: "sentijournal",
@@ -41,6 +61,24 @@ export const PROJECTS: Project[] = [
             "• Sentiment detection powered by Google’s DistilBERT model.",
             "• Clean, modern UI built with React and Material Tailwind."
         ],
+        gallery: [
+            {
+                src: "/projects/sentijournal/sentijournal.png",
+                alt: "SentiJournal Overview Page"
+            },
+            {
+                src: "/projects/sentijournal/main-entries.png",
+                alt: "SentiJournal Home Signed In Page"
+            },
+            {
+                src: "/projects/sentijournal/analysis.png",
+                alt: "SentiJournal Analysis Page"
+            },
+            {
+                src: "/projects/sentijournal/new-entry.png",
+                alt: "SentiJournal New Journal Entry Page"
+            },
+        ]
     },
     {
         slug: "portfolio",
