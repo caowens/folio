@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import StandardPageLayout from "@/layout/standard-page-layout";
 import { SectionWrapper } from "@/layout/section-wrapper";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function ProjectPage({
     params
@@ -74,6 +75,35 @@ export default async function ProjectPage({
                             width={500}
                             className="rounded-lg shadow-lg cursor-pointer"
                         />}
+                </div>
+            </SectionWrapper>
+
+            <SectionWrapper idName="Links">
+                <div className="flex flex-row-reverse gap-6">
+                    <div className="flex-1">
+                        <div className="text-neutral-200 text-base leading-relaxed">
+                            <ul>
+                                <li>
+                                    {project.live_project_url && 
+                                        <Link
+                                            href={project.live_project_url}
+                                            target="_blank"
+                                            className="text-l font-light text-neutral-400 items-center hover:text-neutral-100 transition">
+                                            <span>{project.name} Website</span>
+                                        </Link>}
+                                </li>
+                                <li>
+                                    {project.github && 
+                                        <Link 
+                                            href={project.github}
+                                            target="_blank"
+                                            className="text-l font-light text-neutral-400 items-center hover:text-neutral-100 transition">
+                                            <span>{project.name} Github</span>
+                                        </Link>}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </SectionWrapper>
         </StandardPageLayout>

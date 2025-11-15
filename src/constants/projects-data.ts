@@ -13,6 +13,8 @@ export interface Project {
     href: string;
     key_features: string[];
     gallery?: GalleryImage[];
+    github?: string;
+    live_project_url?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -44,7 +46,9 @@ export const PROJECTS: Project[] = [
                 src: "/projects/lifted-api/quotes-and-users-routes.png",
                 alt: "Lifted API Quotes and Users Routes"
             },
-        ]
+        ],
+        github: "https://github.com/caowens/lifted-api",
+        live_project_url: "https://lifted-api.onrender.com/api-docs/"
     },
     {
         slug: "sentijournal",
@@ -78,7 +82,9 @@ export const PROJECTS: Project[] = [
                 src: "/projects/sentijournal/new-entry.png",
                 alt: "SentiJournal New Journal Entry Page"
             },
-        ]
+        ],
+        github: "https://github.com/caowens/SentiJournalApp",
+        live_project_url: "https://sentijournal-fb-app.web.app/"
     },
     {
         slug: "portfolio",
