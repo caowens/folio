@@ -22,7 +22,7 @@ export default async function ProjectPage({
             description={project.page_desc}
         >
             <SectionWrapper idName="Key Features">
-                <div className="flex flex-row gap-6">
+                <div className="flex flex-col md:flex-row gap-6">
                     <div className="flex-1">
                         <div className="text-neutral-200 text-base leading-relaxed">
                             <ul>
