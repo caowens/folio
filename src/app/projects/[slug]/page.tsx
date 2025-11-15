@@ -1,6 +1,8 @@
 import { PROJECTS } from "@/constants";
 import { notFound } from "next/navigation";
 import StandardPageLayout from "@/layout/standard-page-layout";
+import { SectionWrapper } from "@/layout/section-wrapper";
+import Image from "next/image";
 
 export default async function ProjectPage({
     params
@@ -17,9 +19,26 @@ export default async function ProjectPage({
     return (
         <StandardPageLayout
             title={project.name}
-            description={project.short_desc}
+            description={project.page_desc}
         >
-            More project info...
+            <SectionWrapper idName="Context">
+                <div className="flex flex-row gap-6">
+                    <div className="flex-1">
+                        <div className="text-neutral-200 text-base leading-relaxed">
+                            <p>{project.page_desc}</p>
+                        </div>
+                    </div>
+                    <div className="flex-1">
+                        <Image
+                            width={500}
+                            height={300}
+                            alt={project.name}
+                            className="rounded-lg shadow-lg cursor-pointer"
+                            src={project.cover_photo}
+                        />
+                    </div>
+                </div>
+            </SectionWrapper>
         </StandardPageLayout>
     );
 };

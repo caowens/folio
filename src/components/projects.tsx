@@ -33,7 +33,7 @@ const ProjectCard = ({
                     </button>
                 </div>
                 <p className="text-neutral-400 text-sm mb-4">
-                    {project.short_desc}
+                    {project.card_desc}
                 </p>
             </div>
             <div className="p-2">
