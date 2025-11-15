@@ -21,11 +21,15 @@ export default async function ProjectPage({
             title={project.name}
             description={project.page_desc}
         >
-            <SectionWrapper idName="Context">
+            <SectionWrapper idName="Key Features">
                 <div className="flex flex-row gap-6">
                     <div className="flex-1">
                         <div className="text-neutral-200 text-base leading-relaxed">
-                            <p>{project.page_desc}</p>
+                            <ul>
+                                {project.key_features.map((feature) => (
+                                    <li key={feature}>{feature}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                     <div className="flex-1">
