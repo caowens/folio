@@ -51,7 +51,7 @@ const ProjectCard = ({
     );
 }
 
-export default function Projects() {
+export default function FeaturedProjects() {
     const numberOfProjectsToShow = 2;
 
     return (
