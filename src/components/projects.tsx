@@ -51,15 +51,21 @@ const ProjectCard = ({
     );
 }
 
-export default function FeaturedProjects() {
-    const numberOfProjectsToShow = 2;
+type FeaturedProjectsProps = {
+    isFullList?: boolean;
+}
+
+export default function FeaturedProjects({ isFullList = false }: FeaturedProjectsProps) {
+    const projectsToDisplay = isFullList ? PROJECTS : PROJECTS.slice(0, 2);
+    const viewMoreLink = isFullList ? undefined : { href: "/projects" };
+    const idName = isFullList ? "All Projects" : "Projects";
 
     return (
-        <SectionWrapper idName="Projects" viewMoreLink={{href: "/projects"}}>
+        <SectionWrapper idName={idName} viewMoreLink={viewMoreLink}>
             <div className="blurred-eclipse-purple absolute left-1"></div>
             <div className="blurred-eclipse-purple absolute -right-3/12"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {PROJECTS.slice(0, numberOfProjectsToShow).map((project) => (
+                {projectsToDisplay.map((project) => (
                     <ProjectCard
                         key={project.id}
                         project={project}

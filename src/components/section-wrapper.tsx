@@ -1,10 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
-
-type ViewMoreLink = {
-  href: string;
-  text?: string;
-};
+import { ViewMoreLink } from "@/types/common";
 
 type SectionWrapperProps = {
   idName: string;

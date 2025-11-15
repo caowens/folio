@@ -1,7 +1,13 @@
-export default function Projects() {
+import FeaturedProjects from "@/components/projects";
+import StandardPageLayout from "@/components/standard-page-layout";
+
+export default function ProjectsPage() {
     return (
-        <div className="min-h-screen flex flex-col items-center bg-black relative overflow-hidden">
-            <h1 className="text-4xl font-bold text-white mt-20">Projects</h1>
-        </div>
+        <StandardPageLayout
+            title="PROJECTS"
+            description="Explore a list of projects showcasing various skills and technologies."
+        >
+            <FeaturedProjects isFullList={true} /> 
+        </StandardPageLayout>
     );
 };
