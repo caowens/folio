@@ -2,10 +2,6 @@ import { PROJECTS } from "@/constants";
 import { notFound } from "next/navigation";
 import StandardPageLayout from "@/layout/standard-page-layout";
 
-interface ProjectPageProps {
-    params: { slug: string };
-}
-
 export default async function ProjectPage({
     params
 }: {
