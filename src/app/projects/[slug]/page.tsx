@@ -43,6 +43,18 @@ export default async function ProjectPage({
                     </div>
                 </div>
             </SectionWrapper>
+
+            <SectionWrapper idName="Technologies Used">
+                <div className="flex flex-wrap gap-1">
+                    {project.tags.map((tag) => (
+                        <span
+                            key={tag}
+                            className="bg-neutral-200 text-foreground px-2 py-1 rounded-md text-xs">
+                                {tag}
+                        </span>
+                    ))}
+                </div>
+            </SectionWrapper>
         </StandardPageLayout>
     );
 };
