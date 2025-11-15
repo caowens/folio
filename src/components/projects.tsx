@@ -1,5 +1,5 @@
 import { Project, PROJECTS } from "@/constants";
-import { SectionWrapper } from "./section-wrapper";
+import { SectionWrapper } from "../layout/section-wrapper";
 import Link from "next/link";
 import Image from "next/image";
 

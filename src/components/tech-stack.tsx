@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionWrapper } from "./section-wrapper";
+import { SectionWrapper } from "../layout/section-wrapper";
 import { TECH_STACK, TechChip } from "@/constants";
 import { IconType } from "react-icons";
 

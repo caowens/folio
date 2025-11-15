@@ -1,5 +1,5 @@
 'use client';
-import { SectionWrapper } from "./section-wrapper";
+import { SectionWrapper } from "../layout/section-wrapper";
 import {
   Tabs,
   TabsList,
