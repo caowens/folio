@@ -10,7 +10,7 @@ const ProjectCard = ({
 }) => {
     return (
         <Link 
-            href={`/projects/${project.id}`}
+            href={project.href}
             className="border border-neutral-300 rounded-lg flex flex-col justify-between hover:-translate-y-2 transition ease-in-out duration-300"
         >
             <div className="w-full h-48 relative">
