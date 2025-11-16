@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
         card_desc: "A secure Express/MongoDB API with JWT authentication, Arcjet protection, and Swagger documentation.",
         page_desc: "A RESTful API for motivational and inspirational quotes, offering both public access and private quote lists for authenticated users. Designed for developers or apps that want a reliable source of quotes with interactive documentation.",
         tags: ["Node.JS", "Express.JS", "MongoDB"],
-        cover_photo: "/projects/lifted.jpg",
+        cover_photo: "/projects/lifted-api/lifted.jpg",
         href: "/projects/lifted-api",
         key_features: [
             "• REST API for motivational and inspirational quotes.",
@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
         card_desc: "A web-based journal providing sentiment analysis and a graph to track mood changes over time.",
         page_desc: "A web-based personal journal that helps users track and understand their emotional patterns over time. Each entry is analyzed for sentiment, and users can visualize their mood trends through interactive graphs.",
         tags: ["React.JS", "Firebase", "Tailwind CSS"],
-        cover_photo: "/projects/sentijournal.png",
+        cover_photo: "/projects/sentijournal/sentijournal.png",
         href: "/projects/sentijournal",
         key_features: [
             "• Personal web journal with sentiment analysis for each entry.",
