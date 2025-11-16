@@ -1,4 +1,4 @@
-import StandardPageLayout from "@/components/standard-page-layout";
+import StandardPageLayout from "@/layout/standard-page-layout";
 import TechStack from "@/components/tech-stack";
 
 export default function About() {

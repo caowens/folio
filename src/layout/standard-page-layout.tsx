@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import StyledBreak from "./styled-break";
+import StyledBreak from "../components/styled-break";
 
 type StandardPageProps = {
     title: string;

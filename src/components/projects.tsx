@@ -1,5 +1,5 @@
 import { Project, PROJECTS } from "@/constants";
-import { SectionWrapper } from "./section-wrapper";
+import { SectionWrapper } from "../layout/section-wrapper";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ const ProjectCard = ({
 }) => {
     return (
         <Link 
-            href={`/projects/${project.id}`}
+            href={project.href}
             className="border border-neutral-300 rounded-lg flex flex-col justify-between hover:-translate-y-2 transition ease-in-out duration-300"
         >
             <div className="w-full h-48 relative">
@@ -33,7 +33,7 @@ const ProjectCard = ({
                     </button>
                 </div>
                 <p className="text-neutral-400 text-sm mb-4">
-                    {project.short_desc}
+                    {project.card_desc}
                 </p>
             </div>
             <div className="p-2">
@@ -67,7 +67,7 @@ export default function FeaturedProjects({ isFullList = false }: FeaturedProject
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projectsToDisplay.map((project) => (
                     <ProjectCard
-                        key={project.id}
+                        key={project.slug}
                         project={project}
                     />
                 ))}

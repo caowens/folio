@@ -1,5 +1,5 @@
 import FeaturedProjects from "@/components/projects";
-import StandardPageLayout from "@/components/standard-page-layout";
+import StandardPageLayout from "@/layout/standard-page-layout";
 
 export default function ProjectsPage() {
     return (
