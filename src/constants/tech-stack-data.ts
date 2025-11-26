@@ -12,10 +12,12 @@ import {
     SiFirebase,
     SiGit,
     SiDocker,
+    SiDotnet,
 } from 'react-icons/si';
 import { TbBrandCSharp } from "react-icons/tb";
 import { VscAzure } from "react-icons/vsc";
 import { IconType } from 'react-icons';
+import { DiMsqlServer } from 'react-icons/di';
 
 export interface TechChip {
   id: string;
@@ -73,6 +75,16 @@ export const TECH_STACK: TechChip[] = [
     id: 'node',
     name: 'Node.JS',
     icon: SiNodedotjs,
+  },
+  {
+    id: '.net',
+    name: '.NET',
+    icon: SiDotnet,
+  },
+  {
+    id: 'mssql',
+    name: 'Microsoft SQL Server',
+    icon: DiMsqlServer,
   },
   {
     id: 'mongo',
