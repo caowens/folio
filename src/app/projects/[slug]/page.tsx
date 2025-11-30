@@ -22,25 +22,25 @@ export default async function ProjectPage({
             title={project.name}
             description={project.page_desc}
         >
-            <div className="absolute left-[0%] top-[-75%] z-0 flex h-[35rem] w-full max-w-[1200px] translate-x-[-50%] items-center justify-center md:top-[-10%]">
+            <div className="absolute left-[0%] top-[-75%] z-0 flex h-[35rem] w-full max-w-[1200px] [transform:translateX(-50%)_translateZ(0)] items-center justify-center md:top-[-10%]">
                 <div className="relative">
                     <div className="standard-page-ellipse-purple absolute right-0 top-100"></div>
                 </div>
             </div>
 
-            <div className="absolute left-full top-[75%] z-0 flex h-[35rem] w-full max-w-[1200px] translate-x-[-50%] items-center justify-center md:top-[-10%]">
+            <div className="absolute left-full top-[75%] z-0 flex h-[35rem] w-full max-w-[1200px] [transform:translateX(-50%)_translateZ(0)] items-center justify-center md:top-[-10%]">
                 <div className="relative">
                     <div className="standard-page-ellipse-green absolute left-0 top-200"></div>
                 </div>
             </div>
 
-            <div className="absolute left-[0%] top-[125%] z-0 flex h-[35rem] w-full max-w-[1200px] translate-x-[-50%] items-center justify-center md:top-[-10%]">
+            <div className="absolute left-[0%] top-[125%] z-0 flex h-[35rem] w-full max-w-[1200px] [transform:translateX(-50%)_translateZ(0)] items-center justify-center md:top-[-10%]">
                 <div className="relative">
                     <div className="standard-page-ellipse-blue absolute left-0 top-250 translate-x-[-50%]"></div>
                 </div>
             </div>
 
-            <div className="absolute left-full top-[175%] z-0 flex h-[35rem] w-full max-w-[1200px] translate-x-[-50%] items-center justify-center md:top-[-10%]">
+            <div className="absolute left-full top-[175%] z-0 flex h-[35rem] w-full max-w-[1200px] [transform:translateX(-50%)_translateZ(0)] items-center justify-center md:top-[-10%]">
                 <div className="relative">
                     <div className="standard-page-ellipse-purple absolute left-0 top-375 translate-x-[-50%]"></div>
                 </div>

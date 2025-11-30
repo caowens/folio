@@ -20,20 +20,21 @@ text-accent {
   position: absolute;
   top: 55%; /* Adjust as needed */
   left: 50%; /* Adjust as needed */
-  transform: translate(-50%, -50%); /* Center the eclipse */
+  transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse */
+  -webkit-transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse for older Safari versions */
   width: 600px; /* Adjust size */
   height: 400px; /* Adjust size for eclipse shape */
   border-radius: 50%; /* Makes it an ellipse */
   background-color: rgba(18, 198, 234, 0.5); /* Example color with transparency */
   filter: blur(180px); /* Adjust blur intensity */
-  /* z-index: -1; /* Place it behind other content */
 }
 
 .blurred-eclipse-2 { /* Right Eclipse */
   position: absolute;
   top: 55%; /* Adjust as needed */
   left: 100%; /* Adjust as needed */
-  transform: translate(-50%, -50%); /* Center the eclipse */
+  transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse */
+  -webkit-transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse for older Safari versions */
   width: 400px; /* Adjust size */
   height: 300px; /* Adjust size for eclipse shape */
   border-radius: 50%; /* Makes it an ellipse */
@@ -46,7 +47,8 @@ text-accent {
   position: absolute;
   top: 55%; /* Adjust as needed */
   left: 0%; /* Adjust as needed */
-  transform: translate(-50%, -50%); /* Center the eclipse */
+  transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse */
+  -webkit-transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse for older Safari versions */
   width: 500px; /* Adjust size */
   height: 300px; /* Adjust size for eclipse shape */
   border-radius: 50%; /* Makes it an ellipse */
@@ -56,7 +58,8 @@ text-accent {
 }
 
 .blurred-eclipse-blue {
-  transform: translate(-50%, -50%); /* Center the eclipse */
+  transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse */
+  -webkit-transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse for older Safari versions */
   width: 500px; /* Adjust size */
   height: 300px; /* Adjust size for eclipse shape */
   border-radius: 50%; /* Makes it an ellipse */
@@ -66,7 +69,8 @@ text-accent {
 }
 
 .blurred-eclipse-green {
-  transform: translate(-50%, -50%); /* Center the eclipse */
+  transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse */
+  -webkit-transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse for older Safari versions */
   width: 500px; /* Adjust size */
   height: 300px; /* Adjust size for eclipse shape */
   border-radius: 50%; /* Makes it an ellipse */
@@ -76,7 +80,8 @@ text-accent {
 }
 
 .blurred-eclipse-purple {
-  transform: translate(-50%, -50%); /* Center the eclipse */
+  transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse */
+  -webkit-transform: translate(-50%, -50%) translateZ(0); /* Center the eclipse for older Safari versions */
   width: 500px; /* Adjust size */
   height: 300px; /* Adjust size for eclipse shape */
   border-radius: 50%; /* Makes it an ellipse */
