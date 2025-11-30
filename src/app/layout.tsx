@@ -23,7 +23,9 @@ export default function RootLayout({
       >
         <div className="min-h-screen flex flex-col items-center bg-black relative overflow-hidden">
           <Navbar />
-          {children}
+          <main className="items-center w-full flex flex-col flex-grow">
+            {children}
+          </main>
           <Footer />
         </div>
       </body>

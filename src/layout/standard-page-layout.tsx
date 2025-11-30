@@ -10,7 +10,7 @@ type StandardPageProps = {
 export default function StandardPageLayout({ title, description, children} : StandardPageProps) {
     return (
         <>
-            <div className="absolute left-[50%] top-[-15%] z-0 flex h-[35rem] w-full max-w-[1200px] translate-x-[-50%] items-center justify-center md:top-[-10%]">
+            <div className="absolute left-[50%] top-[-15%] z-0 flex h-[35rem] w-full max-w-[1200px] [transform:translateX(-50%)_translateZ(0)] items-center justify-center md:top-[-10%]">
                 <div className="relative">
                     <div className="standard-page-ellipse-blue absolute left-0 top-0 translate-x-[-50%]"></div>
                     <div className="standard-page-ellipse-green absolute left-0 top-0"></div>
