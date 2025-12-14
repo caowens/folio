@@ -19,7 +19,7 @@ export default function Hero() {
                     </span>
                     <br />
                     <span className="text-xs font-semibold">
-                        <span>Based in Redmond, WA</span>
+                        <span>Based in Kirkland, WA</span>
                     </span>
                     </h1>
                 </div>
