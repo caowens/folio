@@ -56,7 +56,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="mt-4 text-neutral-700 text-thin flex justify-between">
-                <p>© 2025</p>
+                <p>© 2026</p>
                 <p>Alex Owens</p>
             </div>
         </footer>
